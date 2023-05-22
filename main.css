@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 250%;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004067,
+    #006a74,
+    #009155,
+    #7caf07
+  );
+  text-align: center;
+}
+h1 {
+  padding: 3%;
+}
+.glass-button {
+  display: inline-block;
+  padding: 24px 32px;
+  margin: 0.5%;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 28px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.glass-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.question-block {
+  padding: 3%;
+}
+.next-button {
+  display: inline-block;
+  margin-top: 0;
+  padding: 10px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.next-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+.correct {
+  color: #4fa423;
+}
+.wrong {
+  color: #9b111e;
+}
+h5 {
+  font-weight: 200;
+}
+.help-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  width: 60px;
+  cursor: pointer;
+  color: #6fac0f;
+  background: rgba(255, 255, 255, 0.35);
+  border: 0;
+}
+.help-button:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+.score-display {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 105px;
+  margin-top: 22px;
+}
+.life-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.life-status {
+  width: 40px;
+}
+.modal {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+}
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #74cfa8;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+.game-over-message {
+  color: #9b111e;
+}
+.alpha-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+.game-won-message {
+  color: #7caf07;
+}
+.play-again-button {
+  display: inline-block;
+  margin-top: 0;
+  padding: 10px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.play-again-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Capital Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <div class="modal hidden">
+      <button class="modal-close" style="font-size: 40px">&times;</button>
+      <h2 class="modal-title">How to play this quiz game?</h2>
+      <br />
+      <p class="modal-paragraph">
+        In this quiz game, you simply have to guess the correct capital from the
+        options. Answer 50 correct answers to win! You have 6 life-line. That
+        means if you provide wrong answer more than 6 times then you will lose.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="life-icon">
+      <img class="life-status" src="images/health_06.png" />
+    </div>
+    <h5 class="score-display">Score: <span class="scoreDisplay">#</span></h5>
+    <button class="help-button">?</button>
+    <h1>Capital Quiz</h1>
+    <div class="question-block">
+      <div class="game-won-div hidden">
+        <h3 class="game-won-message">
+          Congratulations! <br />You have won the game by scoring
+          <span class="scoreDisplay3">#</span>!
+        </h3>
+        <button class="play-again-button won-play-again">Play Again!</button>
+      </div>
+      <div class="game-end hidden">
+        <h3 class="game-over-message">Unfortunately you have lost the game!</h3>
+        <p class="alpha-text">
+          Your score is <span class="scoreDisplay2">#</span>
+        </p>
+        <button class="play-again-button lose-play-again">Play Again!</button>
+      </div>
+      <h3 class="game-message">
+        What is the capital of <span class="country-name">#</span>?
+      </h3>
+    </div>
+    <div class="options-container">
+      <div>
+        <button class="glass-button option1">Option #1</button>
+        <button class="glass-button option2">Option #2</button>
+      </div>
+      <div>
+        <button class="glass-button option3">Option #3</button>
+        <button class="glass-button option4">Option #4</button>
+      </div>
+    </div>
+    <div class="answer-next-btn hidden">
+      <p class="msg">Correct</p>
+      <button class="next-button">Next</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
